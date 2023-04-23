@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="alinearText">
+        <ul class="typeListU">
+            <li class="typeList">
+                <a class="etiquetaA" href="#dolarObservado">Dolar Observado</a>
+            </li>
+            <li>
+                <a class="etiquetaA"  href="#dolarDeIntercambio">Dolar De Intercambio</a>
+            </li class="typeList">
+            <li>
+                <a class="etiquetaA"  href="#euro">Euro</a>
+            </li class="typeList">
+            <li>
+                <a class="etiquetaA"  href="#tasaDeDesempleo">Tasa De Desempleo</a>
+            </li class="typeList">
+            <li>
+                <a class="etiquetaA"  href="#bitcoin">Bitcoin</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <h1 id="tituloIndicadores">Indicadores En Chile</h1>
+    
+   <div class="posicion">
+        <section class="info image" id="dolarObservado"> 
+            <hr>     
+            <h1 class="seccionText">Dolar Observado</h1>
+            <table class="centrar" id="tableUno">
+                <tr class="border">
+                  <th class="border">Unidad De Medida</th>
+                  <th class="border">Valor</th>
+                  <th class="border">Fecha</th>
+                </tr>
+                <tr class="border">
+                  <td class="border center" id="unidadDolar">- - - - -</td>
+                  <td class="border center" id="valorDolar"> - - - -</td>
+                  <td class="border center" id="fechaDolar"> - - - -</td>
+                </tr>
+                
+              </table>
+              <button class="botonStyle" type="button" onclick="actualizarDolar()">Actualizar</button>
+        </section>
+        <section class="info imageDos" id="dolarDeIntercambio">
+            <hr>
+           
+            <h1 class="seccionTextImtercambio"> Dolar De Intercambio </h1>
+            <table class="centrarDos" id="tableUnoDos">
+                
+                <tr class="border">
+                  <th class="border">Unidad De Medida</th>
+                  <th class="border">Valor</th>
+                  <th class="border">Fecha</th>
+                </tr>
+                <tr class="border">
+                  <td class="border center" id="unidadDolarDos">- - - - -</td>
+                  <td class="border center" id="valorDolarDos"> - - - -</td>
+                  <td class="border center" id="fechaDolarDos"> - - - -</td>
+                </tr>
+              </table>
+              <button class="botonStyle" type="button" onclick="actualizarDolarIntercambio()">Actualizar</button>
+        </section>
+        <section class="info imageTres" id="euro" >
+            <hr>
+            <h1 class="seccionTextEuro">Euro</h1>
+            <table class="centrarTres" id="tableUnoTres">
+                <tr class="border">
+                    <th class="border">Unidad De Medida</th>
+                    <th class="border">Valor</th>
+                    <th class="border">Fecha</th>
+                  </tr>
+                  <tr class="border">
+                    <td class="border center" id="unidadDolarTres">- - - - -</td>
+                    <td class="border center" id="valorDolarTres"> - - - -</td>
+                    <td class="border center" id="fechaDolarTres"> - - - -</td>
+                </tr>
+              </table>
+              <button class="botonStyle" type="button" onclick="actualizarEuro()">Actualizar</button>
+        </section>
+        <section class="info imageCuatro"  id="tasaDeDesempleo">
+            <hr>
+            <h1 class="seccionTextTasaDeDesempleo">Tasa De Desempleo</h1>
+            <table class="centrarCuatro" id="tableUnoCuatro">
+                <tr class="border">
+                    <th class="border">Unidad De Medida</th>
+                    <th class="border">Valor</th>
+                    <th class="border">Fecha</th>
+                  </tr>
+                  <tr class="border">
+                    <td class="border center" id="unidadDolarCuatro">- - - - -</td>
+                    <td class="border center" id="valorDolarCuatro"> - - - -</td>
+                    <td class="border center" id="fechaDolarCuatro"> - - - -</td>
+                </tr>
+              </table>
+              <button class="botonStyle" type="button" onclick="actualizarTasaDesempleo()">Actualizar</button>
+        </section>
+        <section class="info imageCinco" id="bitcoin">
+            <hr>
+            <h1 class="seccionTextBitcoin ">Bitcoin</h1>
+            <table class="centrarCinco" id="tableUnoCinco">
+                <th class="border">Unidad De Medida</th>
+                  <th class="border">Valor</th>
+                  <th class="border">Fecha</th>
+                </tr>
+                <tr class="border">
+                  <td class="border center" id="unidadDolarCinco">- - - - -</td>
+                  <td class="border center" id="valorDolarCinco"> - - - -</td>
+                  <td class="border center" id="fechaDolarCinco"> - - - -</td>
+              </table>
+              <button class="botonStyle" type="button" onclick="actualizarBitcoin()">Actualizar</button>
+        </section>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+        
+</body>
+</html>
