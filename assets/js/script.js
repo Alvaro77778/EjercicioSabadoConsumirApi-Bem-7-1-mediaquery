@@ -143,7 +143,7 @@ function myFunction(xu) {
     //xu es la variable y matches es un metodo o atributo de window.matchMedia, si el if y el matches no podia configurar el ancho de pantalla
     if(xu.matches){
     let cambiarTabla = document.getElementById('tableUno')
-    cambiarTabla.style.paddingLeft ="38%";
+    cambiarTabla.style.paddingLeft ="32%";
     
     
     
