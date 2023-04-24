@@ -21,7 +21,9 @@ function actualizarDolar (){
 
         let styleCuadrado = document.getElementById('tableUno');
         styleCuadrado.style.paddingLeft = '31%';
-
+        //llamon a mi funcion de escucha
+        myFunction(xu); // Call listener function at run time
+            
     })
 }
 
@@ -132,3 +134,23 @@ function actualizarBitcoin(){
 
     })
 }
+
+
+
+//Funcion que es necesaria para el metodo window.. ya que aqui le indico que que se va a hacer, al tener un minimo
+//.. y un maximo de pantalla especificado por mi
+function myFunction(xu) {
+    let cambiarTabla = document.getElementById('tableUno')
+    cambiarTabla.style.paddingLeft ="15%";
+    
+    
+  }
+
+//se crea una variable en donde se guardara el metodo window... que especifica un (max y un min) de pantalla,
+// .. en ese orden ya que comence creando desde una pagina para pantallas grandes xl..
+var xu = window.matchMedia("(max-width: 400px) and (min-width:300px)");
+
+
+// Attach listener function on state changes
+//Adjuntar function listener en cambios de estado..
+xu.addEventListener(myFunction);         

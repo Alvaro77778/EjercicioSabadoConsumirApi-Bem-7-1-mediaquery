@@ -30,11 +30,12 @@
     
     <h1 id="tituloIndicadores">Indicadores En Chile</h1>
     
-   <div class="posicion">
-        <section class="info image" id="dolarObservado"> 
+   <div class="posicion" id="cambiar">
+    <div class="image">
+        <section class="info" id="dolarObservado"> 
             <hr>     
-            <h1 class="seccionText">Dolar Observado</h1>
-            <table class="centrar" id="tableUno">
+            <h1 class="seccionText" id="dolar">Dolar Observado</h1>
+            <table class="centrar cambiarUno" id="tableUno">
                 <tr class="border">
                   <th class="border">Unidad De Medida</th>
                   <th class="border">Valor</th>
@@ -48,12 +49,14 @@
                 
               </table>
               <button class="botonStyle" type="button" onclick="actualizarDolar()">Actualizar</button>
-        </section>
-        <section class="info imageDos" id="dolarDeIntercambio">
+        </section> 
+      </div>
+      <div class="imageDos">
+        <section class="info " id="dolarDeIntercambio">
             <hr>
            
             <h1 class="seccionTextImtercambio"> Dolar De Intercambio </h1>
-            <table class="centrarDos" id="tableUnoDos">
+            <table class="centrarDos cambiarUno" id="tableUnoDos">
                 
                 <tr class="border">
                   <th class="border">Unidad De Medida</th>
@@ -68,7 +71,10 @@
               </table>
               <button class="botonStyle" type="button" onclick="actualizarDolarIntercambio()">Actualizar</button>
         </section>
+      </div>
+      <div class="imageTres">
         <section class="info imageTres" id="euro" >
+        
             <hr>
             <h1 class="seccionTextEuro">Euro</h1>
             <table class="centrarTres" id="tableUnoTres">
@@ -85,7 +91,9 @@
               </table>
               <button class="botonStyle" type="button" onclick="actualizarEuro()">Actualizar</button>
         </section>
-        <section class="info imageCuatro"  id="tasaDeDesempleo">
+      </div>
+      <div class="imageCuatro">
+        <section class="info"  id="tasaDeDesempleo">
             <hr>
             <h1 class="seccionTextTasaDeDesempleo">Tasa De Desempleo</h1>
             <table class="centrarCuatro" id="tableUnoCuatro">
@@ -102,6 +110,8 @@
               </table>
               <button class="botonStyle" type="button" onclick="actualizarTasaDesempleo()">Actualizar</button>
         </section>
+      </div>
+        <div class="imageCinco">
         <section class="info imageCinco" id="bitcoin">
             <hr>
             <h1 class="seccionTextBitcoin ">Bitcoin</h1>
@@ -117,6 +127,7 @@
               </table>
               <button class="botonStyle" type="button" onclick="actualizarBitcoin()">Actualizar</button>
         </section>
+      </div>
     </div>
     <script src="assets/js/script.js"></script>
         
