@@ -143,10 +143,32 @@ function myFunction(xu) {
     //xu es la variable y matches es un metodo o atributo de window.matchMedia, si el if y el matches no podia configurar el ancho de pantalla
     if(xu.matches){
     let cambiarTabla = document.getElementById('tableUno')
-    cambiarTabla.style.paddingLeft ="8%";
+    cambiarTabla.style.paddingLeft ="38%";
+    
+    
     
     let cambiarColor = document.getElementById('tituloIndicadores')
-    cambiarColor.style.color = "green";
+    cambiarColor.style.color = "green"; 
+
+    let prueba = document.getElementById('prueba')
+    prueba.style.fontSize = "15px";
+
+    let pruebaDos = document.getElementById('pruebaDos')
+    pruebaDos.style.fontSize = "15px";
+
+    let pruebaTres = document.getElementById('pruebaTres')
+    pruebaTres.style.fontSize = "15px";
+
+    let pruebaCuatro = document.getElementById('unidadDolar')
+    pruebaCuatro.style.fontSize = "15px";
+
+    let pruebaCinco = document.getElementById('valorDolar')
+    pruebaCinco.style.fontSize = "15px";
+
+    let pruebaSeis = document.getElementById('fechaDolar')
+    pruebaSeis.style.fontSize = "15px";
+    
+
 }
   }
 
