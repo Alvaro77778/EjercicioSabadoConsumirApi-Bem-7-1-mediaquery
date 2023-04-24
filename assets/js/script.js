@@ -154,7 +154,6 @@ function myFunction(xu) {
 // .. en ese orden ya que comence creando desde una pagina para pantallas grandes xl
 var xu = window.matchMedia("(max-width: 400px) and (min-width: 300px)");
 
-
 // Attach listener function on state changes
 //Adjuntar function listener en cambios de estado..
  xu.addEventListener(myFunction);       
